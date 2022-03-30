@@ -1,0 +1,2 @@
+# AdlibUnRegister-LoadGuiTwoRunner-
+    Example2($hGUIParent1) ; no solution. ;~  $iLoadGuiTwo = 1 ; solution 1 ;~  AdlibRegister("LoadGuiTwoRunner", 10) ; solution 2 EndFunc   ;==>LoadGuiTwoFromGuiOne  Func LoadGuiTwoRunner()     AdlibUnRegister("LoadGuiTwoRunner")     Example2($hGUIParent1) EndFunc   ;==>LoadGuiTwoRunner  Func GuiTwoSayHi()     ConsoleWrite('--- HI' &amp; @CRLF) EndFunc   ;==>GuiTwoSayHi  ;~ Full code mở rộng Run("notepad.exe") WinWaitActive("Untitled - Notepad"
